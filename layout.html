@@ -1,0 +1,165 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>Final Layout</title> 
+  <style> 
+    ul { 
+      list-style-type: none; 
+      margin: 0; 
+      padding: 0; 
+      overflow: hidden; 
+      background-color: #424141; 
+    } 
+ 
+    li { 
+      float: left; 
+    } 
+ 
+    li a { 
+      display: block; 
+      color: white; 
+      text-align: center; 
+      padding: 14px 16px; 
+      text-decoration: none; 
+    } 
+ 
+    li a:hover { 
+      background-color: rgb(197, 188, 188); 
+    } 
+ 
+    /* Layout utama */ 
+    .container { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+      padding: 20px; 
+      gap: 20px; 
+    } 
+ 
+    .card, 
+    .Card, 
+    .CaRd, 
+    .CARd { 
+      background-color: white; 
+      padding: 20px; 
+      margin: 10px; 
+    } 
+ 
+    .card { 
+      flex-basis: 65%; 
+    } 
+ 
+    .Card, 
+    .CaRd { 
+      flex-basis: 20%; 
+    } 
+ 
+    .CARd { 
+      width: 100%; 
+      text-align: center; 
+    } 
+ 
+    .fakeimg { 
+      background-color: rgb(102, 100, 100); 
+      width: 100%; 
+    } 
+ 
+    @media screen and (max-width: 768px) { 
+ 
+      .card, 
+      .Card, 
+      .CaRd { 
+        flex-basis: 100%; 
+      } 
+ 
+      ul li { 
+        float: none; 
+      } 
+    } 
+ 
+    @media screen and (max-width: 480px) { 
+      .container { 
+        padding: 10px; 
+      } 
+ 
+      .card, 
+      .Card, 
+      .CaRd { 
+        padding: 15px; 
+      } 
+ 
+      h1 { 
+        font-size: 24px; 
+      } 
+ 
+      p { 
+        font-size: 14px; 
+      } 
+    } 
+  </style> 
+</head> 
+ 
+<!-- Menampilkan Judul Dari Layout --> 
+<body style="background-color: rgb(200, 205, 209);"> 
+  <h1 style="text-align: center;"> Selamat Datang Di Website Sederhana Bisma</h1>  
+  <p style="text-align: center;">Website Kumpulan Project Basic coding</p> 
+ 
+  <!-- Menampilkan Header --> 
+  <ul> 
+    <li><a class="active" href="tabel.html">Home</a></li> 
+    <li><a href="ruang.html">Project</a></li> 
+    <li style="float:right"><a href="tabel.html">Back</a></li> 
+  </ul> 
+ 
+  <div class="container"> 
+    <div class="card"> 
+      <h1>Tabel Sederhana HTML</h1> 
+      <p><strong>SMK BINUS Semarang, 18 Oktober, 2024</strong></p> 
+      <img class="fakeimg" 
+        src="https://www.dicoding.com/blog/wp-content/uploads/2020/04/Internship-Robby-Table-HTML-celpadd-color.jpg" 
+        width="550" height="300"> 
+      <p>Tabel Sederhana</p> 
+      <p>Dalam kesempatan kali ini akan kita pelajari tentang cara membuat tabel menggunakan HTML</p> 
+    </div> 
+ 
+    <!-- Menampilkan foto Presiden jokowi --> 
+    <div class="Card"> 
+      <h1> Presiden jokowi</h1> 
+      <img 
+        src="../image/jokowi.jpg" 
+        width="200" height="300"> 
+       
+      
+      <p>presiden ke tujuh di INDONESIA</p> 
+    </div> 
+ 
+    <!-- Menampilkan foto percobaan menyalakan lampu --> 
+    <div class="card"> 
+
+      <h1>JavaScript Lampu</h1> 
+      <p><strong>Percobaan, 18 Oktober, 2024</strong></p> 
+      <img class="fakeimg" src="https://i.ytimg.com/vi/pZhSaEUMoS8/maxresdefault.jpg"> 
+      <p>Lampu ON OFF</p> 
+      <p>Menerapan JavaScript pada sebuah lampu untu bisa di Nyalakan dan dimatikan menggunakan Tombol</p> 
+    </div> 
+ 
+    <!-- Menampilkan Link --> 
+    <div class="CaRd"> 
+      <h1>Link</h1> 
+      <p><a href="https://www.instagram.com/">Instagram</a></p> 
+      <p><a href="https://www.facebook.com/">Youtube</a></p> 
+      <p><a href="https://www.tiktok.com/id-ID/">TikTok</a></p> 
+      <p><a href="https://www.facebook.com/">Facebook</a></p> 
+    </div> 
+ 
+    <div class="CARd"> 
+      <h1>bimm Website</h1> 
+      <p><strong>copyright saya bisma 2024</strong></p> 
+    </div> 
+  </div> 
+</body> 
+ 
+</html>
